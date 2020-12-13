@@ -44,3 +44,14 @@ services.AddAuthorization(options =>
                 options.Authority = this.Configuration["AzureAd:Authority"];
             })
 4) Put Authorize attribute in API.
+--------------------------------------------------------------------------------------------------------
+
+Facebook integration :
+
+1)Install Microsoft.AspNetCore.Authentication.Facebook  nuget.
+2) Go to Facebook developers page 
+3) create app to get app id
+4) one option is there add product from there select setup option.
+5) there are some outh settings are there need to configure that too.
+6) then use appid and secrete in code i.e services secion of startup.cs file as like AD authentication.
+
